@@ -1,4 +1,4 @@
-const { getTask } = require('../src/todo');
+const { getTask } = require('../../src/todo');
 
 test.skip('REAL API: returns the first task as completed', async () => {
 

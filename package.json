@@ -4,8 +4,7 @@
   "description": "Consumer of API",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/jest __tests__/ --runInBand",
-    "unit": "./node_modules/.bin/jest tests/ --runInBand"
+    "test": "./node_modules/.bin/jest __tests__/ --runInBand"
   },
   "devDependencies": {
     "jest": "^24.5.0"

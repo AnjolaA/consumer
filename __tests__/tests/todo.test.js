@@ -1,4 +1,4 @@
-const { getTask } = require('../src/todo');
+const { getTask } = require('../../src/todo');
 
 const axios = require('axios');
 
