@@ -1,16 +1,17 @@
 const { Verifier } = require('@pact-foundation/pact');
 const path = require('path');
 
-const gitSha = process.env.CIRCLE_SHA1 
+const gitSha = process.env.CIRCLE_SHA1 || "123"
     test("validates the expectations of ProductService", () => {
         let opts = {
-            logLevel: "INFO",
+            logLevel: "DEBUG",
             providerBaseUrl: "https://5b71e6c7586eb5001463a7a0.mockapi.io",
             provider: "MyProvider",
             providerVersion: "1.0.0",
             pactBrokerUrl: "https://anjola.pact.dius.com.au/",
             pactBrokerToken: '9DP8sH7nntZn9qcDfLo73w',
-            consumerVersion: gitSha,
+            consumerVersionTags: [gitSha],
+            providerVersionTags: [gitSha],
             // pactUrls: [
             //     path.resolve(__dirname, '../../pact/pacts/myconsumer-myprovider.json')
             // ]
