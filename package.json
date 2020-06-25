@@ -4,8 +4,10 @@
   "description": "Consumer of API",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/jest __tests__/ --runInBand",
-    "publish:pact": "node ./publish.js"
+    "test:unit": "./node_modules/.bin/jest __tests__/unit --runInBand",
+    "test:pact": "./node_modules/.bin/jest __tests__/pacts --runInBand",
+    "publish": "node ./publish.js",
+    "verify": "./node_modules/.bin/jest __tests__/verify/"
   },
   "devDependencies": {
     "jest": "^24.5.0"
@@ -17,7 +19,7 @@
     "@pact-foundation/pact": "^9.11.0",
     "axios": "^0.19.2",
     "cross-env": "^7.0.2",
-    "jest-pact": "^0.5.2"
+    "jest-pact": "^0.5.4"
   },
   "repository": {
     "type": "git",

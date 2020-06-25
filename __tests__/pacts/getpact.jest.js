@@ -3,14 +3,14 @@
 const { pactWith } = require("jest-pact");
 const { Matchers } = require("@pact-foundation/pact");
 
-const { getTask } = require("../src/todo");
+const { getTask } = require("../../src/todo");
 
 pactWith({ consumer: "MyConsumer", provider: "MyProvider" }, (provider) => {
   describe("GET API", () => {
     const GET_DATA = 
       {
         task_status: "completed",
-        _id: "1.",
+        _id: "1",
         name: "Scrub Toilet",
         Created_date: "2018-06-15T12:46:08.494Z",
         __v: 0,
