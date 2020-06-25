@@ -8,7 +8,7 @@ const gitSha = process.env.CIRCLE_SHA1
             providerBaseUrl: "https://5b71e6c7586eb5001463a7a0.mockapi.io",
             provider: "MyProvider",
             providerVersion: "1.0.0",
-            pactBroker: 'https://anjola.pact.dius.com.au',
+            pactBrokerUrl: "https://anjola.pact.dius.com.au/",
             pactBrokerToken: '9DP8sH7nntZn9qcDfLo73w',
             consumerVersion: gitSha,
             // pactUrls: [
